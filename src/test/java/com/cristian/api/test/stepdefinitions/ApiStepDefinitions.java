@@ -9,14 +9,12 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.hamcrest.Matchers.*;
 
 public class ApiStepDefinitions {
 
     private String endpoint;
     private RequestSpecification request;
     private Response response;
-    private String requestBody;
 
     public ApiStepDefinitions() {
         RestAssured.baseURI = "";
@@ -32,7 +30,6 @@ public class ApiStepDefinitions {
 
     @Given("the request body is:")
     public void setRequestBody(String body) {
-        this.requestBody = body;
         this.request.body(body);
     }
 

@@ -11,7 +11,7 @@ Feature: Local API Testing Examples
     And the response should contain "data"
 
   @example
-  Scenario: Example POST request test structure  
+  Scenario: Example POST request test structure
     Given the API endpoint is "https://api.example.com/create"
     And the request body is:
       """
