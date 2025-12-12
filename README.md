@@ -76,6 +76,13 @@ mvn test -Dcucumber.filter.tags="@get"
 mvn test -Dcucumber.filter.tags="@post"
 ```
 
+### Exclude work-in-progress tests:
+```bash
+mvn test -Dcucumber.filter.tags="not @wip"
+```
+
+**Note:** The sample tests use JSONPlaceholder (a free online REST API). Ensure you have internet connectivity when running tests.
+
 ## Test Reports
 
 After running tests, you can find the reports in:
